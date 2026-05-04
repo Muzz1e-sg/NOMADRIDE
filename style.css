@@ -1,0 +1,731 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #0E0E0E;
+    color: #F5F5F5;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3 {
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Header */
+
+.header{
+    position: sticky;
+    top:0;
+    z-index:1000;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px 60px;
+    background:rgba(0,0,0,.45);
+    backdrop-filter: blur(10px);
+}
+
+/* логотип */
+.logo{
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    line-height: 0.9;
+    color: #E6E6E6;
+    text-transform: uppercase;
+}
+
+/* центр меню */
+.nav{
+    display:flex;
+    gap:50px;
+}
+
+.nav a{
+    text-decoration:none;
+    color:#F5F5F5;
+    font-family:"Inter",sans-serif;
+    font-weight:500;
+    font-size:15px;
+    transition:.25s;
+}
+
+.nav a:hover{
+    color:#E10600;
+}
+
+/* кнопка */
+.btn{
+    background:#E10600;
+    color:#fff;
+    border:none;
+    padding:12px 26px;
+    font-family:"Inter",sans-serif;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#a50500;
+    transform:scale(1.05);
+}
+
+/* Main */
+
+main{
+    background-image: url('alm.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 92vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 840px;
+}
+.home{
+    text-align: center;
+    color: #F5F5F5;
+    font-size: 66px;
+    
+}
+.home h1{
+    line-height: 1.2;
+}
+.home p{
+    font-size: 28px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px auto 0;
+    width: 60%;
+    max-width: 600px;
+}
+
+.btn2{
+    background-color: #E10600;
+    color: #F5F5F5;
+    border: none;
+    padding: 20px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 0;
+}
+
+.btn2:hover{
+    background-color: #a50500;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.btn3{
+    background-color: transparent;
+    color: #F5F5F5;
+    border: 2px solid #F5F5F5;
+    padding: 20px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 0;
+}
+
+.btn3:hover{
+    background-color: #F5F5F5;
+    color: #0E0E0E;
+    border: 2px solid #F5F5F5;
+    transition: 0.3s;
+}
+
+/* Floats */
+
+.floats{
+    min-height: 100vh;
+    padding: 220px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.floats h2{
+    font-size: 68px;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.floats h2::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 6px;
+    background-color: #E10600;
+}
+.float-cards{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.float-card1,
+.float-card2,
+.float-card3{
+    background-color: rgba(0,0,0,0.3);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    width: 300px;
+    font-size: 28px;
+}
+
+.float-card1 img,
+.float-card2 img,
+.float-card3 img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.float-card1:hover,
+.float-card2:hover,
+.float-card3:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0 0 20px #E10600;
+}
+
+.btn4{
+    background-color: #E10600;
+    color: #F5F5F5;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.btn4:hover{
+    background-color: #a50500;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* marsh */
+.marsh{
+    padding: 140px 20px;
+    text-align: center;
+}
+.marsh h2{
+    font-size: 68px;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+}
+.marsh h2::after{
+    content: "";          
+    position: absolute;       
+    bottom: 0;           
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 80px;             
+    height: 6px;              
+    background-color: #E10600;
+}
+
+.marsh-cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.marsh-card1,
+.marsh-card2,
+.marsh-card3{
+    position: relative;
+    width: 400px;
+    height: 600px;
+    overflow: hidden;
+    font-size: 28px;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.7) 100%);
+}
+
+.marsh-card1 img,
+.marsh-card2 img,
+.marsh-card3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.marsh-card1:hover img,
+.marsh-card2:hover img,
+.marsh-card3:hover img{
+    transform: scale(1.1);
+}
+
+.marsh-card1 h3,
+.marsh-card2 h3,
+.marsh-card3 h3{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    color: #F5F5F5;
+    font-size: 28px;
+    margin: 0;
+    z-index: 1;
+    text-align: left;
+}
+
+/* prices */
+
+.prices{
+    min-height: 100vh;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.prices h2{
+    font-size: 68px;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.prices h2::after{
+    content: "";          
+    position: absolute;       
+    bottom: 0;           
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 80px;             
+    height: 6px;              
+    background-color: #E10600;
+}
+
+.prices-cards{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.prices-card1,
+.prices-card2,
+.prices-card3{
+    background-color: rgb(27, 27, 27);
+    backdrop-filter: blur(8px);
+    padding: 30px 20px 30px 20px;
+    border: 2px solid #E10600;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 28px;
+    position: relative;
+}
+
+.prices-card2::before{
+    content: "РЕКОМЕНДУЕМ";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #E10600;
+    color: #F5F5F5;
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+    border-radius: 4px;
+}
+
+.prices-card1:hover,
+.prices-card2:hover,
+.prices-card3:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0 0 20px #E10600;
+}
+
+.prices-card1 h3,
+.prices-card2 h3,
+.prices-card3 h3{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.prices-card1 p,
+.prices-card2 p,
+.prices-card3 p{
+    color: #9c9c9c;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 15px;
+}
+
+.f::before{
+    content: "✓ ";
+    color: #E10600;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.f{
+    text-align: left;
+    padding: 0;
+}
+
+.btn5{
+    background-color: transparent;
+    color: #F5F5F5;
+    border: 2px solid #F5F5F5;
+    padding: 15px 40px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 20px 0 0 0;
+    align-self: center;
+    font-family: "Inter", sans-serif;
+}
+.btn5:hover{
+    background-color: #F5F5F5;
+    color: #0E0E0E;
+    border: 2px solid #F5F5F5;
+    transition: 0.3s;
+}
+.btn6{
+    background-color: #E10600;
+    color: #F5F5F5;
+    border: none;
+    padding: 15px 40px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 20px 0 0 0;
+    align-self: center;
+    font-family: "Inter", sans-serif;
+}
+.btn6:hover{
+    background-color: #a50500;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/*conditions */
+
+.conditions{
+    min-height: 100vh;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.conditions h2{
+    font-size: 68px;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+}
+.conditions h2::after{
+    content: "";          
+    position: absolute;       
+    bottom: 0;           
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 80px;             
+    height: 6px;              
+    background-color: #E10600;
+}
+
+.conditions-cards{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.conditions-card1,
+.conditions-card2,
+.conditions-card3,
+.conditions-card4{
+    background-color: rgb(27, 27, 27);
+    backdrop-filter: blur(8px);
+    padding: 50px;
+    border: 2px solid #E10600;
+    width: 180px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+}
+
+.conditions-card1:hover,
+.conditions-card2:hover,
+.conditions-card3:hover,
+.conditions-card4:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0 0 20px #E10600;
+}
+
+.card-icon{
+    font-size: 34px;
+    line-height: 1;
+    position: relative;
+    top: -20px;
+}
+
+.conditions-card1 p,
+.conditions-card2 p,
+.conditions-card3 p,
+.conditions-card4 p{
+    color: #F5F5F5;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* contacts */
+
+.contacts{
+    min-height: 80vh;
+    padding: 120px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+    background-image: 
+        repeating-linear-gradient(
+            0deg,
+            rgba(225, 6, 0, 0.1) 0px,
+            rgba(225, 6, 0, 0.1) 1px,
+            transparent 1px,
+            transparent 60px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            rgba(225, 6, 0, 0.1) 0px,
+            rgba(225, 6, 0, 0.1) 1px,
+            transparent 1px,
+            transparent 60px
+        );
+    }
+
+.contacts h2{
+    font-size: 148px;
+    position: relative;
+}
+
+.contacts p{
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color:#9c9c9c;
+    position: relative;
+    line-height: 1.4;
+}
+
+.btn7{
+    background-color: #E10600;
+    color: #F5F5F5;
+    border: none;
+    width: 380px;
+    height: 80px;
+    padding: 20px 40px;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 40px;
+    font-family: "Inter", sans-serif;
+    box-shadow: #E10600 0px 10px 30px -10px;
+    position: relative;
+}
+
+.btn7:hover{
+    background-color: #a50500;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* footer */
+.footer {
+    background: #0b0b0b;
+    color: white;
+    padding-top: 60px;
+    font-family: "Inter", sans-serif;
+    border: #9a9a9a 1px solid;
+    border-style: solid none none none;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 40px;
+}
+
+.footer-col h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.footer-col p {
+    color: #9a9a9a;
+    margin: 5px 0;
+}
+
+.social-btn {
+    background: #1a1a1a;
+    padding: 8px;
+    border: none;
+}
+
+.social-btn:hover {
+    background: #E10600;
+    transition: 0.3s;
+}
+
+.footer-bottom {
+    border-top: 1px solid #222;
+    text-align: center;
+    padding: 40px;
+    color: #9a9a9a;
+    font-size: 14px;
+}
+
+/* Все карточки js */
+
+.float-card1,
+.float-card2,
+.float-card3,
+.marsh-card1,
+.marsh-card2,
+.marsh-card3,
+.prices-card1,
+.prices-card2,
+.prices-card3 {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1.2s;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@media (max-width: 1200px){
+
+.float-cards,
+.marsh-cards,
+.prices-cards,
+.conditions-cards{
+    flex-wrap: wrap;
+}
+
+.contacts h2{
+    font-size: 80px;
+}
+
+}
+
+@media (max-width: 768px){
+
+.header{
+    padding: 15px 20px;
+}
+
+.nav{
+    display:none;
+}
+
+.home{
+    font-size: 42px;
+}
+
+.home p{
+    font-size: 18px;
+}
+
+.buttons{
+    flex-direction: column;
+    width:100%;
+}
+
+.btn2,
+.btn3{
+    width:100%;
+}
+
+.float-cards,
+.marsh-cards,
+.prices-cards,
+.conditions-cards{
+    flex-direction: column;
+    align-items:center;
+}
+
+.marsh-card1,
+.marsh-card2,
+.marsh-card3{
+    width:90%;
+    height:400px;
+}
+
+.contacts h2{
+    font-size: 52px;
+}
+
+.btn7{
+    width:90%;
+    height:70px;
+}
+
+}
+
+@media (max-width: 480px){
+
+.home{
+    font-size: 32px;
+}
+
+.contacts h2{
+    font-size: 36px;
+}
+
+.logo{
+    font-size:18px;
+}
+
+}
